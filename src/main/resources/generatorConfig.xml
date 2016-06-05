@@ -7,7 +7,7 @@
     <javaModelGenerator targetPackage="com.example.redmine.db.model" targetProject="src/main/java" />
     <sqlMapGenerator targetPackage="com.example.redmine.db.map" targetProject="src/main/java" />
     <javaClientGenerator targetPackage="com.example.redmine.db.sql" targetProject="src/main/resources/sql" type="XMLMAPPER" />
-    <table schema="redmine" tableName="%"
+    <table schema="public" tableName="%"
             enableInsert="true"
             enableSelectByPrimaryKey="true"
             enableSelectByExample="true"
