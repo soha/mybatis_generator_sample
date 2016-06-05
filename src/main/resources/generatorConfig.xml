@@ -2,21 +2,21 @@
 <!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
 <generatorConfiguration >
   <classPathEntry location="/Users/you/.m2/repository/org/postgresql/postgresql/9.4.1208/postgresql-9.4.1208.jar"/>
-  <context id="context1" >
+  <context id="context1" targetRuntime="MyBatis3">
     <jdbcConnection driverClass="org.postgresql.Driver" connectionURL="jdbc:postgresql://localhost:5432/redmine" userId="redmine" password="redmine" />
     <javaModelGenerator targetPackage="com.example.redmine.db.model" targetProject="src/main/java" />
-    <sqlMapGenerator targetPackage="com.example.redmine.db.map" targetProject="src/main/java" />
-    <javaClientGenerator targetPackage="com.example.redmine.db.sql" targetProject="src/main/resources/sql" type="XMLMAPPER" />
+    <sqlMapGenerator targetPackage="com.example.redmine.db.map" targetProject="src/main/resources" />
+    <javaClientGenerator targetPackage="com.example.redmine.db.sql" targetProject="src/main/java" type="XMLMAPPER"/>
     <table schema="public" tableName="%"
             enableInsert="true"
             enableSelectByPrimaryKey="true"
             enableSelectByExample="true"
             enableUpdateByPrimaryKey="true"
-            enableUpdateByExample="false"
+            enableUpdateByExample="true"
             enableDeleteByPrimaryKey="true"
-            enableDeleteByExample="false"
-            enableCountByExample="false"
-            selectByExampleQueryId="false"
+            enableDeleteByExample="true"
+            enableCountByExample="true"
+            selectByExampleQueryId="true"
             modelType="hierarchical">
     </table>
   </context>
