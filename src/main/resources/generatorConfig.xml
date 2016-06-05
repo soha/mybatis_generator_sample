@@ -5,8 +5,8 @@
   <context id="context1" targetRuntime="MyBatis3">
     <jdbcConnection driverClass="org.postgresql.Driver" connectionURL="jdbc:postgresql://localhost:5432/redmine" userId="redmine" password="redmine" />
     <javaModelGenerator targetPackage="com.example.redmine.db.model" targetProject="src/main/java" />
-    <sqlMapGenerator targetPackage="com.example.redmine.db.map" targetProject="src/main/resources" />
-    <javaClientGenerator targetPackage="com.example.redmine.db.sql" targetProject="src/main/java" type="XMLMAPPER"/>
+    <sqlMapGenerator targetPackage="com.example.redmine.db.mapper" targetProject="src/main/resources" />
+    <javaClientGenerator targetPackage="com.example.redmine.db.mapper" targetProject="src/main/java" type="XMLMAPPER"/>
     <table schema="public" tableName="%"
             enableInsert="true"
             enableSelectByPrimaryKey="true"
